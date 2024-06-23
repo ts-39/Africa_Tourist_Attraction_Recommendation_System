@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-import seaborn as sns
+# import seaborn as sns
 import matplotlib.pyplot as plt
 
 city_names = [
@@ -91,14 +91,14 @@ africa_city_urls = {
     'Rabat': 'https://www.tripadvisor.com/Tourism-g293736-Rabat_Rabat_Sale_Kenitra-Vacations.html'
 }
 
-def see_corr(data):
-    sample = data.select_dtypes(include='number')
-    corr = sample.corr()
-    mask = np.zeros_like(corr, dtype = np.bool_)
-    mask[np.triu_indices_from(mask)] = True
-    plt.figure(figsize=(10,10))
-    sns.heatmap(corr, mask=mask)
-    plt.show()
+# def see_corr(data):
+#     sample = data.select_dtypes(include='number')
+#     corr = sample.corr()
+#     mask = np.zeros_like(corr, dtype = np.bool_)
+#     mask[np.triu_indices_from(mask)] = True
+#     plt.figure(figsize=(10,10))
+#     sns.heatmap(corr, mask=mask)
+#     plt.show()
 
 from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import NearestNeighbors
