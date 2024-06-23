@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 # import seaborn as sns
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 
 city_names = [
     "Bangkok", "Paris", "London", "Dubai", "Singapore", "Kuala Lumpur",
