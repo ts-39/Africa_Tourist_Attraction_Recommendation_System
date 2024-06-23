@@ -143,6 +143,7 @@ name = st.selectbox('Choose your most favorite city among these', city_names, in
 # st.write(type(name))
 number_of_places = st.number_input('How many recommended places you want to know', value = 3, max_value=30, step=1)
 if name != None:
+    st.write(f'Top {number_of_places} recommended cities in Africa')
     list_of_reco = main_func(df, name)
     list_of_reco_africa = take_only_africa(list_of_reco, n = number_of_places)
     for i, m in zip(list_of_reco_africa, range(number_of_places)):
